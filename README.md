@@ -1,8 +1,12 @@
 # Geog 328 Final Project: Seattle Transit Walkshed Analysis
 ### Group AD3: Rayne Thompson, Noah Curtis, Jay Van Lare, Jishnu Kandala
+
 ![Favicon image displaying a transit icon over a blue background](assets/favicon.png)
 
 ## [Application URL](https://turnert447.github.io/transit-walkshed/html/home.html)
+
+![Full Website Screenshot](assets/screenshots/screenshot.png)
+
 
 ## Project Description
 This project is an interactive webmap visualizing population accessibility to Seattle's rapid transit infrastructure. This is not the full picture of Seattle's transit, but we chose to utilize only the Rapid Ride BRT lines and Link light rail station in order to get the picture of accessibility to Seattle's fastest transit. The project performs real-time spatial analysis in Turf.js, allowing users to explore walksheds at three different distance thresholds that roughly equate to a 5, 10, and 15 minute walk. Dynamic choropleths display within the selected buffer to visualize population density and show the user the total population, area, and percentage of Seattle's population that live within the selected walkshed. The project also contains a 2050 view, visualizing planned transit expansions alongside projected population growth.
