@@ -14,7 +14,7 @@ Fast, frequent transit within walking distance is an important factor in buildin
 
 #### Walkshed Distance Selection
 Radio buttons display for different walkshed distances, 0.25 mi (5 min walk), 0.5 mi (10 minute walk) and 0.75 mi (15 minute walk). These buttons are tied to an event listener that updates the currentBuffer variable and triggers the recalculateWalkshed() function. The createUnifiedBuffer function creates a turf.buffer() at the selected distance, merging with turf.union() to create a single walkshed polygon
-![Walkshed Distance Buttons](../transit-walkshed/assets/screenshots/walkshed-distance.png)
+![Walkshed Distance Buttons](assets/screenshots/walkshed-distance.png)
 
 #### Transit Layer Toggles
 User-facing checkboxes allow the user to show/hide the transit lines independently, returning a combined feature collection of the selected features. Upon deselecting a line, the visibility is updated to hide the layer, and recalculateWalkshed() fires upon repressing the Calculate Walkshed button to return the new population information.
@@ -22,22 +22,22 @@ User-facing checkboxes allow the user to show/hide the transit lines independent
 #### Stop Point Visibility
 This checkbox controls the visibility of the individual transit stop markers on the map. The toggle calls updateStopLayerVisibility(), which shows or hides the circle layers for stops. This does not trigger any recalculation since the stops are purely visual. 
 
-![Transit Lines & Stop Points](../transit-walkshed/assets/screenshots/lines-stops.png)
+![Transit Lines & Stop Points](assets/screenshots/lines-stops.png)
 
 #### Reset Button
 The "Clear" button has an event listener tied to the "clear" function, which clears the buffer feature selection and repopulates the full city choropleth and statistics.
-![Clear Button](../transit-walkshed/assets/screenshots/clear-but.png)
+![Clear Button](assets/screenshots/clear-but.png)
 
 
 #### Interactive Popups
 Clicking on census tracts of transit stops enables informational popups. The map registers click events and extracts properties from the JSON, rendering them in a Mapbox GL popup. Census popups display population, density, area, and growth rate, while stops display the stop name, type, and ID. 
-![Census Popup](../transit-walkshed/assets/screenshots/census-pop.png)
-![Stop Popup](../transit-walkshed/assets/screenshots/stop-pop.png)
+![Census Popup](assets/screenshots/census-pop.png)
+![Stop Popup](assets/screenshots/stop-pop.png)
 
 #### Real-time Statistics
 The statistics panel displays the total walkshed population, the percentage of Seattle's total population contained within, and the area of the walkshed. These stats are populated by the updateStats() function called via the event listener on the calculate button. Hitting "clear" returns the city to the default full rendering, showing the full choropleth and 100% of the population and giving users immediate feedback for different transit combinations and buffer distances. 
 
-![Statistics Window](../transit-walkshed/assets/screenshots/stats.png)
+![Statistics Window](assets/screenshots/stats.png)
 
 ## Other Functions
 #### Spatial Analysis
