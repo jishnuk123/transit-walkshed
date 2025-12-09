@@ -1,6 +1,6 @@
 # Geog 328 Final Project: Seattle Transit Walkshed Analysis
 ### Group AD3: Rayne Thompson, Noah Curtis, Jay Van Lare, Jishnu Kandala
-![Favicon image displaying a transit icon over a blue background](../transit-walkshed/assets/favicon.png)
+![Favicon image displaying a transit icon over a blue background](assets/favicon.png)
 
 ## [Application URL](https://turnert447.github.io/transit-walkshed/html/home.html)
 
@@ -14,6 +14,7 @@ Fast, frequent transit within walking distance is an important factor in buildin
 
 #### Walkshed Distance Selection
 Radio buttons display for different walkshed distances, 0.25 mi (5 min walk), 0.5 mi (10 minute walk) and 0.75 mi (15 minute walk). These buttons are tied to an event listener that updates the currentBuffer variable and triggers the recalculateWalkshed() function. The createUnifiedBuffer function creates a turf.buffer() at the selected distance, merging with turf.union() to create a single walkshed polygon
+
 ![Walkshed Distance Buttons](assets/screenshots/walkshed-distance.png)
 
 #### Transit Layer Toggles
@@ -26,12 +27,15 @@ This checkbox controls the visibility of the individual transit stop markers on 
 
 #### Reset Button
 The "Clear" button has an event listener tied to the "clear" function, which clears the buffer feature selection and repopulates the full city choropleth and statistics.
+
 ![Clear Button](assets/screenshots/clear-but.png)
 
 
 #### Interactive Popups
 Clicking on census tracts of transit stops enables informational popups. The map registers click events and extracts properties from the JSON, rendering them in a Mapbox GL popup. Census popups display population, density, area, and growth rate, while stops display the stop name, type, and ID. 
+
 ![Census Popup](assets/screenshots/census-pop.png)
+
 ![Stop Popup](assets/screenshots/stop-pop.png)
 
 #### Real-time Statistics
@@ -73,7 +77,7 @@ Part of our data pre-processing was calculating the percentage population change
 - Github Pages: Static hosting for app and JSON files
 - Mapbox API: Tile serving
 
-#### Acknowledgements
+## Acknowledgements
 We would like to acknowledge the great professor Bo Zhao and all of his dedicated TA's for being strong and helpful proponents of our learning and development as geographers. We'd like to thank Sound Transit, King County Metro, the City of Seattle, and the US Census Bureau for providing high-quality data for free for our use in this project, as well as the open source communities of QGIS, turf.js, and Jupyter for maintaining the tools we used to complete this project. 
 
 #### AI Use Disclosure
